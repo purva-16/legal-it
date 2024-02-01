@@ -1,0 +1,36 @@
+{% load static %}
+<!-- Updated Navbar with Legal Advice App Links -->
+<header class="header">
+  <div class="container container--narrow">
+      <a href="/" class="header__logo">
+        <img src="{% static 'images/logo.svg' %}" alt="DevSearch Logo" />
+      </a>
+      <nav class="header__nav">
+          <input type="checkbox" id="responsive-menu" />
+          <label for="responsive-menu" class="toggle-menu">
+              <span>Menu</span>
+              <div class="toggle-menu__lines"></div>
+          </label>
+          <ul class="header__menu">
+              <li class="header__menuItem"><a href="{% url 'about' %}">About Me</a></li>
+              <li class="header__menuItem"><a href="#">Our Lawyers</a></li>
+              <li class="header__menuItem"><a href="{% url 'login' %}">Login</a></li>
+              <li class="header__menuItem"><a href="{% url 'signin' %}">Sign Up</a></li>
+              <li class="header__menuItem"><a href="#">Chatbot</a></li>
+              <li class="header__menuItem"><a href="#">Log Out</a></li>
+              <li class="header__menuItem dropdown">
+                  
+                  </div>
+              </li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+<!-- Add this simple JavaScript function for logout (you can replace it with your own logout logic) -->
+<script>
+    function logout() {
+        alert('Logout logic goes here');
+        // Replace the alert with your actual logout logic, such as redirecting to a logout page or making an API call
+    }
+</script>

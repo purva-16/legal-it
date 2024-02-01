@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+        /* Add styles specific to the About Us page */
+        .container--narrow {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 40px 0;
+        }
+
+        .hero-section__box h2 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .about-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+    <title>About Us - Legal Advice</title>
+</head>
+
+<body>
+    <!-- Navbar - You can include the navbar.html here -->
+
+    <main class="about">
+        <section class="hero-section text-center">
+            <div class="container container--narrow">
+                <div class="hero-section__box">
+                    <h2>About Us</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container container--narrow">
+                <p>Welcome to Legal Advice, your trusted source for legal guidance. Our mission is to connect individuals
+                    from rural regions with experienced lawyers who can provide expert advice and assistance.</p>
+
+                <p>At Legal Advice, we understand the unique challenges faced by individuals in rural areas when it
+                    comes to accessing legal support. Our platform aims to bridge the gap by offering a user-friendly
+                    interface to find and connect with skilled lawyers in various legal fields.</p>
+
+                <p>Whether you need assistance with a legal matter, are seeking advice, or looking for representation,
+                    our platform is designed to make the process simple and efficient. We prioritize the needs of our
+                    users and strive to create a community where legal support is accessible to everyone.</p>
+
+                <p>Explore our platform to discover experienced lawyers, learn about their expertise, and make informed
+                    decisions regarding your legal concerns. Your satisfaction and legal well-being are our top
+                    priorities.</p>
+
+                <p>Thank you for choosing Legal Advice. We're here to assist you on your legal journey.</p>
+            </div>
+        </section>
+
+        <!-- Add an image to the About Us page -->
+        <section class="about-image text-center">
+            <img src="images/about-us-image.jpg" alt="About Us Image" />
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+
+</html>
